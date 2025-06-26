@@ -1,0 +1,14 @@
+name: Ping Replit
+
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Replit URL
+        run: curl -I https://https://d7cf282a-259b-4172-ac31-eb028e7e8208-00-jkzj4yvdls58.pike.replit.dev//
